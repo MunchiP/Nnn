@@ -15,9 +15,7 @@ public class User {
     private String nombre;
     private String apellido;
     private int edad;
-    private String email;
-    private String password;
-    private byte[] foto;
+    private boolean genero;
 
     public User(){
 
@@ -55,29 +53,9 @@ public class User {
         this.edad = edad;
     }
 
-    public String getEmail() {
-        return email;
-    }
+    public boolean isGenero() { return genero; }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public byte[] getFoto() {
-        return foto;
-    }
-
-    public void setFoto(byte[] foto) {
-        this.foto = foto;
-    }
+    public void setGenero(boolean genero) { this.genero = genero; }
 
     @Override
     public String toString() {
@@ -85,10 +63,8 @@ public class User {
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
-                ", edad=" + edad +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", foto=" + Arrays.toString(foto) +
+                ", edad=" + edad + '\'' +
+                ", genero=" + genero +
                 '}';
     }
 }
