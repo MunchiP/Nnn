@@ -35,6 +35,6 @@ export const routes: Routes = [
     {path: "Final", component: FinComponent},
 
     // Ruta error -  ruta por defecto
-    {path: '', component: AnimacionPrincipalComponent },
-    {path: '**', component: AnimacionPrincipalComponent}
+    {path: '', component: FormularioComponent },
+    {path: '**', component: FormularioComponent}
 ];
